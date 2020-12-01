@@ -8,59 +8,96 @@
     <title>HOT RESTAURANT RESERVATIONS</title>
   </head>
   <body>
-    <div class="jumbotron">
-        <h1 class="display-4">RESERVATIONS for Nate & DJs Bar and Grill</h1>
-        <h2>Featuring CHEF Elie Michele!</h2>
-        <p class="lead">JOIN US for your special event or for an evening out. </p>
-        <hr class="my-4">
-        <p>Book your table today!!!</p>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Submit</a>
+    <div class="container">
+      <div class="jumbotron text-center">
+          <h1 class="display-4">RESERVATIONS for Nate & DJs Bar and Grill</h1>
+          <h2>Featuring CHEF Elie Michele!</h2>
+          <p class="lead">JOIN US for your special event or for an evening out. </p>
+          <hr class="my-4">
+          <p>Book your table today!!!</p>
+
+          <a href="/tables">
+            <button class="btn btn-lg btn-primary">
+              <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-card-list" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M14.5 3h-13a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
+                <path fill-rule="evenodd" d="M5 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 5 8zm0-2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5z"/>
+                <circle cx="3.5" cy="5.5" r=".5"/>
+                <circle cx="3.5" cy="8" r=".5"/>
+                <circle cx="3.5" cy="10.5" r=".5"/>
+              </svg> 
+              View Tables
+            </button>
+          </a>
+          <a href="/">
+            <button class="btn btn-lg btn-light">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-house-door-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.5 10.995V14.5a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5V11c0-.25-.25-.5-.5-.5H7c-.25 0-.5.25-.5.495z"/>
+                <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/></svg>
+            </button>
+          </a>   
       </div>
-      <div class="col-md-8">
-      <form>
+    </div>
 
-        <form>
-            <div class="form-group">
-              <label for="FormControlInput1">Name</label>
-              <input type="name" class="form-control" id="FormControlInput1" placeholder="First and Last Name">
-            </div>
-            <div class="form-group">
-                <label for="FormControlInput2">Email address</label>
-                <input type="email" class="form-control" id="FormControlInput2" placeholder="name@example.com">
-              </div>
+    <div class="container">
+      <div class="card">
+        <div class="card-header">Table Reservation</div>
+          <div class="card-body">
+            <form>
               <div class="form-group">
-                <label for="FormControlInput3">Phone</label>
-                <input type="phone" class="form-control" id="FormControlInput3" placeholder="ie: (310) xxx-xxxx">
+                <label for="FormControlInput1">Name</label>
+                <input type="name" class="form-control" id="FormControlInput1" placeholder="First and Last Name">
               </div>
-            <div class="form-group">
-              <label for="exampleFormControlSelect1">Number in your party</label>
-              <select class="form-control" id="exampleFormControlSelect1">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5 or more</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="exampleFormControlSelect2">Time Requested</label>
-              <select multiple class="form-control" id="exampleFormControlSelect2">
-                <option>5:00pm</option>
-                <option>5:30pm</option>
-                <option>6:00pm</option>
-                <option>6:30pm</option>
-                <option>7:00pm</option>
-                <option>7:30pm</option>
-                <option>8:00pm</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="exampleFormControlTextarea1">Special Request or Info</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-          </form>
 
-        </div>
+              <div class="form-group">
+                  <label for="FormControlInput2">Email address</label>
+                  <input type="email" class="form-control" id="FormControlInput2" placeholder="name@example.com">
+              </div>
+
+              <div class="form-group">
+                  <label for="FormControlInput3">Phone</label>
+                  <input type="phone" class="form-control" id="FormControlInput3" placeholder="ie: (310) xxx-xxxx">
+              </div>
+
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">Number in your party</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5 or more</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="exampleFormControlSelect2">Time Requested</label>
+                <select multiple class="form-control" id="exampleFormControlSelect2">
+                  <option>5:00pm</option>
+                  <option>5:30pm</option>
+                  <option>6:00pm</option>
+                  <option>6:30pm</option>
+                  <option>7:00pm</option>
+                  <option>7:30pm</option>
+                  <option>8:00pm</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Special Request or Info</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+
+              <div class="form-group">
+                <label for="FormControlInput3">Unique ID</label>
+                <input type="id" class="form-control" id="FormControlInput4" placeholder="ID #">
+              </div>
+
+              <button type="submit" class="btn btn-primary" href="#" role="button">Submit</button>
+            </form>
+          </div>
+      </div>
+    </div>
+
   </body>
 </html>
 </head>
